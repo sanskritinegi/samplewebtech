@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="style.css">
+ 
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<title>covid tracker</title>
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+</head> 
+<body>
+	<header>
+  <div class="wrapper">
+    <h1 class="logo id="logo">Covid<span>Help</span></h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#cont">Home</a></li>
+        <li><a href="#chat">ChatBot</a></li>
+        <li><a href="#track">Tracker</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#signupp"><button class="signup">Sign Up</button></a></li>
+      </ul>
+    </nav>
+    
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+    
+  </div>
+</header>
+<br><br><br><br><br>
+<section>
+  <div class="container" id="cont">
+        <div class="col-hero">
+          <h1 class="title-hero">Covid assistant</h1>
+
+          <h4 class="sub-hero">
+            Your Covid-19 assistant is here which will help u guide u for symptoms give u the stats and help u with all the helpline numbers!
+          </h4>
+
+          <button class="btn-hero"><a href="https://www.mohfw.gov.in/">Get Help Now</a></button>
+        </div>
+        <img src="4198555.jpg" alt="" class="img-hero" />
+      </div>
+</section>
+
+
+
+<div class="mouse"><span></span></div>
+
+
+
+
+<main id="chat">
+<div class="flex">
+  <div>
+    <h1>Covid Help Bot</h1>
+  </div>
+  <div id="result">
+  </div>
+  <br>
+  <div id="input">
+  <input type="text" id="ans" placeholder="Enter your response" required/>
+  </div>
+  <br><br><br><br>
+<center><button class="hospitals"><a href="https://aarogyasetu.gov.in/" style="color: white;">
+  nearest hospitals</a>
+</button></center>
+</div>
+
+</main>
+
+
+<!-------tracker app -->
+ <div class="container-fluid bg-light p-5 text-center my-3" id="track">
+      <h1 class="">Covid-19 Tracker India</h1>
+      <h5 class="text-muted">
+
+      </h5>
+    </div>
+
+    <div class="container my-10">
+      <div class="row text-center">
+        <div class="col-6 text-warning">
+          
+          <h1>Confirmed</h1>
+          <p id="confirmed"></p>
+        </div>
+        <div class="col-6 text-info">
+          <h1>Active</h1>
+          <p id="active"></p>
+        </div>
+        <br><br>
+        <div class="col-6 text-success">
+          <h1>Recovered</h1>
+          <p id="recovered"></p>
+        </div>
+        <br><br>
+        <div class="col-6 text-danger">
+          <h1>Deceased</h1>
+          <p id="deaths"></p>
+        </div>
+      </div>
+    </div>
+<!---graph--->]
+   
+
+   <div class="container" style="height: 100vh;">
+      
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="myList"></div>
+
+
+
+<!---cards--->]
+
+
+
+
+
+<!-------ofdd -->
+<center><h1 class="container-fluid bg-light p-5 text-center my-3" id="blog">Ways To Prevent Corona Virus</h1></center>
+<br><br>
+<div class="cards-list">
+  
+<div class="card 1">
+  <div class="card_image"> <img src="1.svg" /> </div>
+  <div class="card_title title-white">
+    <p></p>
+  </div>
+</div>
+
+  <div class="card 2">
+  <div class="card_image">
+    <img src="2.svg" />
+    </div>
+  <div class="card_title title-white">
+    <p></p>
+  </div>
+</div>
+
+<div class="card 3">
+  <div class="card_image">
+    <img src="3.svg" />
+  </div>
+  <div class="card_title">
+    <p></p>
+  </div>
+</div>
+  
+  <div class="card 4">
+  <div class="card_image">
+    <img src="4.svg" />
+    </div>
+  <div class="card_title title-black">
+    <p></p>
+  </div>
+  </div>
+
+</div>
+
+
+
+<!-- form-->
+<div class="fm" id="signupp">
+ <h2 class="container-fluid bg-light p-5 text-center my-3">
+  To Get tips and suggestions on how to defend yourself against COVID-19 sign up to the newsletter to get updates to yoour email id!
+</h2>
+  <form method="post" action="">
+  
+  <h1 id="logo">SIGN UP</h1>
+  <label for="username">Name</label>
+  <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email"  autocomplete="off" required />
+  <!--<a class="forgot" href="#">Forgot Password?</a>
+  <a class="register" href="#">Register</a>-->
+
+ <center> <button class="btn-hero">Sign Me Up!</center>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+<!---footer--->
+
+     <footer class="footer">
+       
+            <!-- replace with your own email address -->
+            Made by 
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/sanskritinegi">
+                        Sanskriti Negi 19BIT0204
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://dribbble.com/sanskritinegi">
+                        Kartik Gulati 19BIT0165
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/Reallysanskriti">
+                        Ayushman Chahar 19BIT0207
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/sanskritinegi">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+
+
+<script type="text/javascript" src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+
+  </body>
+</body>
+</html>

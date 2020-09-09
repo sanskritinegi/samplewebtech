@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="Path_2" x="173.378" y="-297.305" width="2286.422" height="1782.832" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <path id="Path_1" data-name="Path 1" d="M9.379,656.82s184.7,65.3,299.694-51.552,88.242-151.358,210.211-220.093,242.816,44.818,361.3-41.1S1013.006.4,1093.157,10.707-21.985-30.534-21.985-30.534Z" transform="translate(-159.815 -84.066)" fill="rgba(255,205,167,0.58)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_2)">
+      <path id="Path_2-2" data-name="Path 2" d="M34.146,1226.674s330.547,119.435,536.36-94.291S728.431,855.542,946.717,729.822s434.564,81.974,646.613-75.177,237-628.6,380.441-609.746S-21.985-30.534-21.985-30.534Z" transform="matrix(-0.97, 0.26, -0.26, -0.97, 2421.66, 931.4)" fill="#ffe2cc"/>
+    </g>
+  </g>
+</svg>

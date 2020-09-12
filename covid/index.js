@@ -1,3 +1,5 @@
+//hamburger
+
 $(window).ready(function(){
   $('.menu-toggle').click(function(){
     console.log(2);
@@ -6,7 +8,7 @@ $(window).ready(function(){
   });
 });
 
-
+// chatbot
 
 var questions = [
     'Whats your name ?',

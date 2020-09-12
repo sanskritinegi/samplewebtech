@@ -14,7 +14,7 @@ var questions = [
     'Whats your name ?',
     'Do you have fever?(answer in Y/N)',
     'Do you have dry cough (answer in Y/N)?',
-    'difficulty in breathing (answer in Y/N)?',
+    'Any difficulty in breathing (answer in Y/N)?',
 
     'If symptoms prevail please refer to the hospitals'
 ];

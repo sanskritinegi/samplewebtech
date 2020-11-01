@@ -36,14 +36,14 @@ function showResponse() {
     ++num;
     setTimeout(changeQuestion, 2000);
   } else if(num == 1) {
-    if(inputBox.value=="y" || inputBox.vlaue=="Y"){
+    if(inputBox.value=="y" || inputBox.value=="Y"){
     output.innerHTML = "okay,then";
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs");
     ++num;
     setTimeout(changeQuestion, 2000);}
 
-    else if(inputBox.value=="n" || inputBox.vlaue=="N"){
+    else if(inputBox.value=="n" || inputBox.value=="N"){
     output.innerHTML = "great";
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs");
@@ -54,14 +54,14 @@ function showResponse() {
  
   }
   } else if(num == 2) {
-    if(inputBox.value=="y" || inputBox.vlaue=="Y"){
+    if(inputBox.value=="y" || inputBox.value=="Y"){
     output.innerHTML = "okay,then";
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs");
     ++num;
     setTimeout(changeQuestion, 2000);}
 
-    else if(inputBox.value=="n" || inputBox.vlaue=="N"){
+    else if(inputBox.value=="n" || inputBox.value=="N"){
     output.innerHTML = "great";
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs");

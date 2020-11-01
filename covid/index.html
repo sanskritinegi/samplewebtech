@@ -162,6 +162,33 @@
   </div>
 
 </div>
+				     
+				     <br><br>
+<!--carousel-->
+<center>
+<div ng-app="myApp">
+    
+    
+    <section id="carousel" ng-carousel
+      ng-swipe-right="curSlide=curSlide-1" 
+      ng-swipe-left="curSlide=curSlide+1">
+
+      <ul>
+        <li><img src="https://pbs.twimg.com/media/EUh-1SmU0AE8GIz.jpg" />
+        <li><img src="https://pbs.twimg.com/media/EVFmRJNU8AUcRpN.jpg" />
+        <li><img src="https://pbs.twimg.com/media/EUHZQfoUYAEa8N9.jpg" />
+        <li><img src="https://pbs.twimg.com/media/EUHWoZoUMAEIldT.jpg" />
+        <li><img src="https://pbs.twimg.com/media/EU63fwYU4AAIZAh.jpg" />
+      </ul>
+      
+      <div id="prev-button" ng-click="curSlide=curSlide-1"> &lt; </div>
+      
+      <div id="next-button" ng-click="curSlide=curSlide+1">&gt; </div>
+    </section>
+
+
+</div>
+</center>
 
 
 

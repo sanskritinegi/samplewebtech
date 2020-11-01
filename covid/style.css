@@ -649,3 +649,27 @@ input[type="submit"]:active {
     padding: .5em;
 }
 
+ #carousel {
+  cursor: pointer;
+  width:500px;
+  height:500px;
+}
+
+
+  #carousel #prev-button, #carousel #next-button {
+      position:absolute; 
+      top: 40%;
+      font-size: 3em; 
+      color: #000000;
+    } 
+    #carousel #prev-button { 
+      left: 10px 
+    }
+    #carousel #next-button { 
+      right: 10px 
+    }
+    #carousel img {
+      width: 500px; 
+      height: 500px;
+    }
+

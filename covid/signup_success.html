@@ -1,48 +1,135 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title> Signup Form</title> 
-<link rel="stylesheet" 
-href= 
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-integrity= 
-"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-crossorigin="anonymous"> 
-          
+<!DOCTYPE html>
+<html>
 
-<style>
-    body{
-        background-image: url("b3.svg");
+<head>
+    <title> Signup Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    }
 
-    h1{
-        font-size: 3.5em;
-        font-style: bold;
-    }
-</style> 
-</head> 
-    <body> 
-    <br> 
-    <br> 
-    <br> 
-    <div class="container" > 
-    
-        <div class="row"> 
-        <div class="col-md-3"> 
-        </div> 
-                  
-        <div class="col-md-6 main"> 
-                      <img src="tick.svg">
-            <h1><center> Signup Successful</center></h1> 
-                      
-        </div> 
-                  
-                  
-        <div class="col-md-3"> 
-        </div> 
-                  
-        </div> 
-    </div> 
-</body> 
-</html> 
+    <style>
+        .ml5 {
+            position: relative;
+            font-weight: 300;
+            font-size: 4.5em;
+            color: #402d2d;
+        }
+
+        .ml5 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.1em;
+            padding-right: 0.05em;
+            padding-bottom: 0.15em;
+            line-height: 1em;
+        }
+
+        .ml5 .line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 3px;
+            width: 100%;
+            background-color: #402d2d;
+            transform-origin: 0.5 0;
+        }
+
+        .ml5 .letters {
+            display: inline-block;
+            opacity: 0;
+        }
+
+        body {
+            background-image: url("b3.svg");
+
+        }
+
+        h1 {
+            font-size: 3em;
+            font-style: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 main">
+                <centre><img src="tick.svg"></centre>
+                <!-- <h1 class="ml1"><centre>
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">SIGNUP SUCCESSFUL</span>
+                <span class="line line2"></span>
+            </span></centre>
+            </h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script src="signup.js"></script>
+        -->
+                <centre>
+                    <h1 class="ml5">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters letters-left">Signup</span>
+                            <span class="letters letters-right">Successful</span>
+                            <span class="line line2"></span>
+                        </span>
+                    </h1>
+                </centre>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            </div>
+
+
+            <div class="col-md-3">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.ml5 .line',
+            opacity: [0.5, 1],
+            scaleX: [0, 1],
+            easing: "easeInOutExpo",
+            duration: 700
+        }).add({
+            targets: '.ml5 .line',
+            duration: 600,
+            easing: "easeOutExpo",
+            translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
+        }).add({
+            targets: '.ml5 .letters-left',
+            opacity: [0, 1],
+            translateX: ["0.5em", 0],
+            easing: "easeOutExpo",
+            duration: 600,
+            offset: '-=300'
+        }).add({
+            targets: '.ml5 .letters-right',
+            opacity: [0, 1],
+            translateX: ["-0.5em", 0],
+            easing: "easeOutExpo",
+            duration: 600,
+            offset: '-=600'
+        }).add({
+            targets: '.ml5',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+</script>
+

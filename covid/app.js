@@ -1,8 +1,10 @@
+var PORT = process.env.PORT || 5000
 var express=require("express"); 
-var bodyParser=require("body-parser"); 
-  
+var bodyParser=require("body-parser");
 const mongoose = require('mongoose'); 
-mongoose.connect('mongodb://localhost:27017/signups'); 
+const url = process.env.MONGO_URL || 'mongodb://localhost:27017/signups'
+ 
+mongoose.connect(url); 
 var db=mongoose.connection; 
 db.on('error', console.log.bind(console, "connection error")); 
 db.once('open', function(callback){ 
@@ -39,8 +41,8 @@ app.get('/',function(req,res){
 res.set({ 
     'Access-control-Allow-Origin': '*'
     }); 
-return res.redirect('index1.html'); 
-}).listen(3000) 
+return res.redirect('index.html'); 
+}).listen(PORT) 
   
   
-console.log("server listening at port 3000"); 
+console.log("server listening at port 5000"); 
